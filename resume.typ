@@ -101,7 +101,9 @@
 
 #item(
 
+
   [ *相似航空机加件细粒度分类  * —— 东北大学 / 沈阳飞机工业集团  2022JX04H012],
+
 
   [],
 
@@ -136,7 +138,9 @@
 // ]
 熟悉Python编程语言，Pytorch深度学习框架，linux操作系统，了解git常见操作
 
+
 熟悉常见的边缘检测传统算子和深度学习边缘检测算法，如Sobel, Canny, RCF, PidiNet等。熟悉深度学习基本理论及经典网络模型，如CNN，ResNet，RepVGG，VIT等
+
 
 
 使用过C\#调用Mech-Eye Nano相机对海康Visionmaster软件进行二次开发
