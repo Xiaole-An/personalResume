@@ -47,11 +47,11 @@
 
   // 二级标题下加一条横线
   show heading.where(level: 2): it => stack(
-    v(0.3em),
+    v(0.05em),
     it,
-    v(0.6em),
+    v(0.25em),
     line(length: 100%, stroke: 0.05em + themeColor),
-    v(0.1em),
+    v(0.0em),
   )
   
   // 更改 bullet list 的图标
@@ -74,7 +74,7 @@
   
   // 主体设定
   set par(justify: true)
-  show par: set block(spacing: 0.65em)
+  show par: set block(spacing: 0.55em)
   
   // 首部与照片
   grid(
@@ -94,21 +94,21 @@
 #let sidebar(side, content, withLine: true, sideWidth: 12%) = style(styles => {
   let sideSize = measure(side, styles)
   let contentSize = measure(content, styles)
-  let height = calc.max(sideSize.height, contentSize.height) + 0.5em
+  let height = calc.max(sideSize.height, contentSize.height) + 0em
   grid(
     columns: (sideWidth, 0%, 1fr),
-    gutter: (0.75em),
+    gutter: (0.5em),
     {
       set align(right)
-      v(0.25em)
+      v(0.1em)
       side
-      v(0.25em)
+      v(0.1em)
     },
     if (withLine) {line(end: (0em, height), stroke: 0.05em)},
     {
-      v(0.25em)
+      v(0.1em)
       content
-      v(0.25em)
+      v(0.1em)
     },
   )
 })
@@ -137,7 +137,7 @@
         }
       })
     }).join(h(0.5em) + "·" + h(0.5em))
-    v(0.5em)
+    v(0em)
 }
 
 
@@ -168,6 +168,21 @@
     title, desc, endnote
   )
 }
+
+#let shixi_item(
+  title,
+  desc,
+  endnote
+) = {
+  v(0.25em)
+  grid(
+    columns: (50%, 1fr, auto),
+    gutter: (0em),
+    title, desc, endnote
+  )
+}
+
+
 
 #let award(
   title,
