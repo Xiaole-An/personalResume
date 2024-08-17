@@ -21,10 +21,10 @@
 #let resume(
   size: 10pt,
   themeColor: rgb(38, 38, 125),
-  top: 1.5cm,
-  bottom: 2cm,
-  left: 2cm,
-  right: 2cm,
+  top: 0.75cm,
+  bottom: 1cm,
+  left: 1cm,
+  right: 1cm,
   photograph: "",
   photographWidth: 0em,
   gutterWidth: 0em,
@@ -181,6 +181,20 @@
     title, desc, endnote
   )
 }
+#let xiangmu_item(
+  title,
+  desc,
+  endnote
+) = {
+  v(0.25em)
+  grid(
+    columns: (40%, 1fr, auto),
+    gutter: (0em),
+    title, desc, endnote
+  )
+}
+
+
 
 
 
