@@ -19,7 +19,7 @@
 
 // 主体
 #let resume(
-  size: 10pt,
+  size: 9pt,
   themeColor: rgb(38, 38, 125),
   top: 0.75cm,
   bottom: 1cm,
@@ -40,7 +40,7 @@
   ))
   
   // 基础字体设定
-  set text(font: (font.main, font.cjk), size: size, lang: "zh")
+  set text(font: (font.main, font.cjk), size: 9.1pt, lang: "zh")
 
   // 标题及小标题样式
   show heading: set text(themeColor, 1.1em)
